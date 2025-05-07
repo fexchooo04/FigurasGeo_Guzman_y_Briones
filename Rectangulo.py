@@ -9,3 +9,4 @@ class Rectangulo(FiguraGeometrica):
 
     def __str__(self):
         return f'Rectángulo -> Alto: {self._alto}, Ancho: {self._ancho}, Área: {self.area()}'
+    
