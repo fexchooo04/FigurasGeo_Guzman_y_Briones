@@ -8,5 +8,7 @@ class Rectangulo(FiguraGeometrica):
         return self._alto * self._ancho
 
     def __str__(self):
-        return f'Rectángulo -> Alto: {self._alto}, Ancho: {self._ancho}, Área: {self.area()}'
-    
+        return f'Rectángulo -> {self.__dict__.__str__()}'
+if __name__ == '__main__':
+    r1 = Rectangulo(alto=5, ancho=3)
+    print(r1)

@@ -43,11 +43,9 @@ class Rectangulo(FiguraGeometrica):
         return self._alto * self._ancho
 
     def __str__(self):  # Se corrigió el nombre del método de `str` a `__str__`
-        return f'Rectángulo -> Alto: {self._alto}, Ancho: {self._ancho}, Área: {self.area()}'
+        return f'FiguraGeometrica: {self.__dict__.__str__()}'
 
-# Ejemplo de uso
-cuadrado = Cuadrado(5)
-print(cuadrado)  # Ahora usa __str__ correctamente
+if __name__ == '__main__':
+    fg1= FiguraGeometrica(alto=5, ancho=3)
+    print(fg1)
 
-rectangulo = Rectangulo(4, 6)
-print(rectangulo)  # Ahora usa __str__ correctamente
